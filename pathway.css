@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  background-color: blue;
+  z-index: 3;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: white;
+}
+
+.background-img {
+  background-color: black;
+  text-align: center;
+  margin: 0 px;
+  padding: 0 px;
+  z-index: -5;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#image {
+  width: 1000px;
+  height: auto;
+  padding: 0 px;
+  margin: 0 px;
+  z-index: 1;
+}
+
+.navbar {
+  text-align: left;
+  background-color: #031838;
+  position: sticky;
+  z-index: 100;
+  overflow: clip;
+}
+
+#intro {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+ul#navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #011229;
+}
+
+#navbar-list li {
+  float: left;
+}
+
+#navbar-list li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #011229;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+  border-bottom-color: #010b1a;
+  border-right-color: #010b1a;
+}
+
+#navbar-list li a:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#image-board {
+  background-color: #262729;
+}
+
+.para {
+  background-color: black;
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.act-sup-img {
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sup-img {
+  text-align: center;
+  width: 30%;
+  float: right;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: black;
+}
+
+.main-txt {
+  width: 40%;
+  color: white;
+  float: left;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 10px;
+  background-color: #161617;
+  display: inline-block;
+}
+
+.lean-right {
+  float: left;
+  margin-right: 50px;
+}
