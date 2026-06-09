@@ -120,10 +120,12 @@ ul li a:hover {
 }
 
 .imageboard {
-  width: 20%;
-  height: auto;
   margin: 20px;
   border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover; /* Crops the image to fit dimensions */
+  object-position: center; /* Positions the crop focal point (Default is center) */
 }
 
 body {
